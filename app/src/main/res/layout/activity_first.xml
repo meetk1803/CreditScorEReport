@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner1"
+        android:fillViewport="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/text_15"
+                app:cardElevation="@dimen/text_5"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexenddecaregular"
+                        android:text="@string/last_negative_item"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/seek_bar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/last_negative_item_bar_min"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/last_negative_item_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/seek_bar_padding"
+                            android:paddingRight="@dimen/seek_bar_padding" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/last_negative_item_bar_max"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/last_negative_item_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexenddecaregular"
+                        android:gravity="center"
+                        android:text="@string/last_negative_item_default"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/text_15"
+                app:cardElevation="@dimen/text_5"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexenddecaregular"
+                        android:text="@string/count_following_accounts"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/seek_bar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/following_accounts_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/credit_cards"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/credit_cards_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/credit_cards_value"
+                            android:layout_width="@dimen/following_accounts_value_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/count_following_accounts_default"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/seek_bar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/following_accounts_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/mortgages"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/mortgages_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/mortgages_value"
+                            android:layout_width="@dimen/following_accounts_value_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/count_following_accounts_default"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/seek_bar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/following_accounts_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/retail_finances"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/retail_finances_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/retail_finances_value"
+                            android:layout_width="@dimen/following_accounts_value_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/count_following_accounts_default"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/seek_bar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/following_accounts_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/auto_loans"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/auto_loans_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/auto_loans_value"
+                            android:layout_width="@dimen/following_accounts_value_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/count_following_accounts_default"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/seek_bar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/following_accounts_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/student_loans"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/student_loans_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/student_loans_value"
+                            android:layout_width="@dimen/following_accounts_value_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/count_following_accounts_default"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/seek_bar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/following_accounts_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/other_loans"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <SeekBar
+                            android:id="@+id/other_loans_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/other_loans_value"
+                            android:layout_width="@dimen/following_accounts_value_width"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexenddecaregular"
+                            android:text="@string/count_following_accounts_default"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|right|center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boder_b1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/lexenddecaregular"
+                        android:paddingLeft="@dimen/button_padding"
+                        android:paddingRight="@dimen/button_padding"
+                        android:text="@string/next"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+    </RelativeLayout>
+</RelativeLayout>
